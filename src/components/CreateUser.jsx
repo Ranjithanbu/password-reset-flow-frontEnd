@@ -57,7 +57,7 @@ const CreateUser = () => {
                         <p>{formik.errors.password}</p>
                     </div>
 
-                    <p>already have a account <NavLink to='/login'>login</NavLink></p>
+                    <p>already have an account <NavLink to='/login'>login</NavLink></p>
                     <button className="btn btn-primary w-50 py-2 mx-auto" type="submit">Create</button>
                 </div>
 
