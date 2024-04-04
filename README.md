@@ -1,8 +1,9 @@
-# React + Vite
+### password reset-flow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+simply i created signup form to get the user details and also i did formik and yup validation for user inputs after we getting user datails which is sent to backend and  stored in the  database
 
-Currently, two official plugins are available:
+we can signIn using valid details and also we can reset the password 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### front-End deyployement Link-`https://amazing-brigadeiros-3a908e.netlify.app/`
+
+#### Back-End deployement Link-`https://password-reset-flow-be-sxss.onrender.com`

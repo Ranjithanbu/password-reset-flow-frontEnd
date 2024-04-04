@@ -13,12 +13,17 @@ const CreateUser = () => {
         password: ""
     }
 
+//schema for form validation
+
     const validationSchema = Yup.object().shape({
         name: Yup.string().required('Username is required'),
         email: Yup.string().email().matches(/^[\w.-]+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,}$/, 'enter valid mail').required('email is required'),
         password: Yup.string().min(5, 'password should be minimum 5 charactor').max(10, 'password shuld less than 10 charactor').required('Password required')
 
     })
+
+//sending user data to database
+
     const formik = useFormik({
         initialValues: initialValue,
         validationSchema,

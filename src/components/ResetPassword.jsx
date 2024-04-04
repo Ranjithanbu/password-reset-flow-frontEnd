@@ -2,11 +2,14 @@ import React, { useState } from 'react';
 import { useNavigate, useParams } from 'react-router';
 import axios from 'axios';
 const ResetPassword = () => {
+
     const navigate = useNavigate()
     const [message, setMessage] = useState('')
     const { id, token } = useParams()
-    const handlePassword = async (e) => {
 
+//passing new password to database    
+
+    const handlePassword = async (e) => {
         e.preventDefault()
         const data = { password: e.target[0].value }
         await axios.put(`https://password-reset-flow-be-sxss.onrender.com/api/resetPassword/${token}`, data)

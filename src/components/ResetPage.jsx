@@ -5,7 +5,10 @@ import { useNavigate } from 'react-router';
 const ResetPage = ({ token, setToken }) => {
     const [message, setMessage] = useState('')
     const navigate = useNavigate()
-    const handleReset = async (e) => {
+    
+ //  sending mail id to database    
+    
+ const handleReset = async (e) => {
         e.preventDefault()
         const data = { email: e.target[0].value }
         await axios.post('https://password-reset-flow-be-sxss.onrender.com/api/resetPasswordLink', data)
