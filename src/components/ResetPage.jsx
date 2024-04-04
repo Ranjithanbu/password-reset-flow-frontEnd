@@ -8,7 +8,7 @@ const ResetPage = ({ token, setToken }) => {
     const handleReset = async (e) => {
         e.preventDefault()
         const data = { email: e.target[0].value }
-        await axios.post('https://password-reset-flow-be-sxss.onrender.com/api/resetPasswordLink', data)
+        await axios.post('http://localhost:5000/api/resetPasswordLink', data)
             .then(res => {
                 setMessage(res.data.message)
                 console.log(token);
