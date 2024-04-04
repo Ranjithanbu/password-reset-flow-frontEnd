@@ -23,7 +23,7 @@ const App = () => {
           <Route path='/resetPassword' element={<ResetPage token={token} setToken={setToken} />} />
 
           <Route path='/home' element={<Home />} />
-          <Route path='/resetPasswordPage/:id/:token' element={<ResetPassword token={token} />} />
+          <Route path='/reset-password-page/:id/:token' element={<ResetPassword token={token} />} />
         </Routes>
       </BrowserRouter>
     </div>
